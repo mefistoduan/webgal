@@ -1,0 +1,74 @@
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    background: url("../images/bg.png")top center no-repeat;
+    background-size: 100%;
+}
+.chat {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #d94d51;
+    padding: 20px;
+    background: rgba(255,255,255,0.4);
+    min-height: 240px;
+}
+.chat .lt {
+    width: 78%;
+    height: 100%;
+    min-height: 240px;
+    float: left;
+}
+.chat .lt span {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    color: #333;
+}
+.chat .rt {
+    width: 20%;
+    height: 100%;
+    min-height: 240px;
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 1px solid #d94d51;
+}
+.chat .rt button {
+    width: 20%;
+    height: 46px;
+    overflow: hidden;
+    border: 1px solid #fec853;
+    text-align: center;
+    line-height: 46px;
+    font-size: 16px;
+    color: #fff;
+    background: #fec853;
+    float: left;
+    margin-right: 10px;
+}
+.chat .rt button:hover {
+    background: #c69d41;
+}
