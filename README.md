@@ -1,0 +1,2 @@
+# webgal
+web for galgame
