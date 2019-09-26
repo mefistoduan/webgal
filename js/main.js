@@ -1,9 +1,16 @@
 var nextWordid = 1;
 var currentWordid = 1;
+var speakerid = 1;
+
+// 发言人
+var speaker = [];
 
 $(function () {
     // 初始化数据
     initData();
+
+    // 初始化数据
+    initSpeaker();
 
     // 下一句
     $('#step').click(function () {
@@ -31,11 +38,12 @@ function stepWord(wordid) {
     var currentWord = getWord(wordid);
     nextWordid = currentWord.next;
     currentWordid = wordid;
-    // 变更讲话人
 
+    // 变更讲话人
     $('.chat .speaker').text(currentWord.speaker);
     // 变更文本
-    $('.chat .lt span').empty().text( currentWord.content);
+    displayText(currentWord.content);
+    // $('.chat .lt span').empty().text( currentWord.content);
     // 判断是否有下一句
     if (nextWordid) {
         $('#step').show();
@@ -89,4 +97,8 @@ function initChoice(choice) {
         htmlValue += '<button onclick="stepWord(' + choice[i].next + ')">' + choice[i].text + '</button>';
     }
     return htmlValue;
+}
+
+function initSpeaker() {
+    speaker = speakerList[speakerid];
 }

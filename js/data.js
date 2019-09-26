@@ -1,11 +1,13 @@
 // author: 八方龙杀阵
 
 var dataList = {};
+var speakerList = {};
 function initData(){
 	dataList[1] = word_1;
 	dataList[2] = word_2;
 	dataList[3] = word_3;
 	dataList[4] = word_4;
+	speakerList[1] = speaker_1;
 }
 
 var word_1 = {
@@ -42,3 +44,13 @@ var word_4 = {
 	content : '游戏结束',
 	backgroundImage : 'office2.jpg'
 };
+
+var speaker_1 = {
+	name:'角色A',
+	karma:0,//因果，业障
+	friend:0,//友好值
+	health:100,//健康
+	god:0,//神性
+	human:1,//人性
+	devil:0,//魔性
+}

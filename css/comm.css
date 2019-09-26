@@ -42,7 +42,7 @@
     min-height: 240px;
     float: left;
 }
-.chat .lt span {
+.chat .lt .content {
     width: 100%;
     overflow: hidden;
     display: block;
