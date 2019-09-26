@@ -20,7 +20,7 @@
     display: block;
     margin: 0 auto;
     background: url("../images/bg/office.jpg")top center no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%!important;
 }
 .chat {
     position: fixed;
@@ -30,6 +30,8 @@
     display: block;
     margin: 0 auto;
     border: 2px solid #d94d51;
+    border-left: 0;
+    border-right: 0;
     padding: 20px;
     background: #cf9f4a;
     min-height: 240px;
@@ -60,12 +62,12 @@
     width: 20%;
     height: 46px;
     overflow: hidden;
-    border: 1px solid #fec853;
+    border: none;
     text-align: center;
     line-height: 46px;
     font-size: 16px;
     color: #fff;
-    background: #fec853;
+    background: #d94d51;
     float: left;
     margin-right: 10px;
 }
@@ -106,4 +108,14 @@
     background: rgba(255,255,255,0.4);
     color: #333;
     float: right;
+}
+.chat .speaker_container {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+.speaker_container .speaker {
+    float: left;
+    overflow: hidden;
 }
