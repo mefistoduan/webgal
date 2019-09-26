@@ -42,3 +42,8 @@ web for galgame
 ###6.重置系统
 
 	添加重置系统，清空回放文本，初始化全局属性，回到首页  
+
+
+==============  
+素材引用  
+http://www.aigei.com/avg/background/current/

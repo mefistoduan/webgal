@@ -9,20 +9,23 @@ function initData(){
 }
 
 var word_1 = {
+    speaker : '角色A',
 	content : '这里是第一句话',
 	next : 2,
-	backgroundImage : 'bg.png'
+	backgroundImage : 'office.jpg'
 };
 
 var word_2 = {
+    speaker : '角色A',
 	content : '这里是第二句话',
 	next : 3,
-	backgroundImage : 'bg2.png'
+	backgroundImage : 'office2.jpg'
 };
 
 var word_3 = {
+    speaker : '角色A',
 	content : '这里是第三句话',
-	backgroundImage : 'bg.png',
+	backgroundImage : 'office.jpg',
 	choice : [
 		{
 			text : '回到第一句',
@@ -37,5 +40,5 @@ var word_3 = {
 
 var word_4 = {
 	content : '游戏结束',
-	backgroundImage : 'bg2.png'
+	backgroundImage : 'office2.jpg'
 };
