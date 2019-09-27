@@ -19,7 +19,8 @@ var datas = [
 	    roleid : 1,
 		content : '这里是第一句话',
 		next : 2,
-		backgroundImage : 'office.jpg'
+		backgroundImage : 'office.jpg',
+        choice:[{next:1,text:'选1'},{next:2,text:'选2'},{next:3,text:'选3'}]
 	},
 	{
 		id : 2,
@@ -49,7 +50,7 @@ var datas = [
 		content : '游戏结束',
 		backgroundImage : 'office2.jpg'
 	}
-] 
+]
 var roles = [
 	{
 		id : 1,

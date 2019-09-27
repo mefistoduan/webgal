@@ -7,8 +7,6 @@ $(function () {
     // 初始化数据
     initData();
 
-    // 显示选项
-    showChoice();
 
     // 下一句
     $('#step').click(function () {
@@ -46,11 +44,14 @@ function stepWord(wordid) {
     roleid = currentWord.roleid;
     // 变更讲话人
     changeSpeaker(roleid);
+    showChoice(currentWord.choice);
+
     // 多选控制器
     var fn;
     if (currentWord.choice) {
         $('#choiceDiv').show();
         fn = function () {
+            // 显示选项
             $('#choiceDiv').html(initChoice(currentWord.choice));
         }
     } else {
@@ -155,18 +156,18 @@ function getReplayText(textList) {
 }
 
 // 显示选项
-function showChoice() {
-    var showDom = '<button class="choice_btn" choice="1">选项1</button><button class="choice_btn" choice="2">选项2</button><button class="choice_btn" choice="3">选项3</button>';
-
+function showChoice(choice) {
+    var showDom = '';
+    for (var i = 0; i < choice.length; i++) {
+        showDom += '<button  class="choice_btn" onclick="stepWord(' + choice[i].next + ')">' + choice[i].text + '</button>';
+    }
     var d = dialog({
         title: '选项',
         content: showDom
     });
     d.showModal();
 
-     $(document).on('click', '.choice_btn', function () {
-            d.close().remove();
-            var choice = $(this).attr('choice');
-            alert('you choice ' + choice);
-      });
+    $(document).on('click', '.choice_btn', function () {
+        d.close().remove();
+    });
 }
