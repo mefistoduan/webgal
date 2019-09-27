@@ -7,6 +7,9 @@ $(function () {
     // 初始化数据
     initData();
 
+    // 显示选项
+    showChoice();
+
     // 下一句
     $('#step').click(function () {
         stepWord(nextWordid);
@@ -151,3 +154,19 @@ function getReplayText(textList) {
     return htmlValue;
 }
 
+// 显示选项
+function showChoice() {
+    var showDom = '<button class="choice_btn" choice="1">选项1</button><button class="choice_btn" choice="2">选项2</button><button class="choice_btn" choice="3">选项3</button>';
+
+    var d = dialog({
+        title: '选项',
+        content: showDom
+    });
+    d.showModal();
+
+     $(document).on('click', '.choice_btn', function () {
+            d.close().remove();
+            var choice = $(this).attr('choice');
+            alert('you choice ' + choice);
+      });
+}
