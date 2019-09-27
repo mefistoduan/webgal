@@ -7,9 +7,6 @@ $(function () {
     // 初始化数据
     initData();
 
-//    // 初始化数据
-//    initSpeaker();
-
     // 下一句
     $('#step').click(function () {
         stepWord(nextWordid);
@@ -24,15 +21,15 @@ $(function () {
     });
     // 回放
     $('#replay').click(function () {
-    	replay();
+        replay();
     });
 
     //实现按下空格进入下一句话
     $(document).keydown(function (e) {
-        if (e.keyCode == 32 ) {
-        	if (nextWordid) {
-        		stepWord(nextWordid);
-        	}
+        if (e.keyCode == 32) {
+            if (nextWordid) {
+                stepWord(nextWordid);
+            }
         }
     });
 
@@ -50,7 +47,8 @@ function stepWord(wordid) {
     var fn;
     if (currentWord.choice) {
         $('#choiceDiv').show();
-        fn = function(){$('#choiceDiv').html(initChoice(currentWord.choice));
+        fn = function () {
+            $('#choiceDiv').html(initChoice(currentWord.choice));
         }
     } else {
         $('#choiceDiv').hide();
@@ -99,15 +97,16 @@ function loadPrgress() {
 function getWord(wordid) {
     return dataList[wordid];
 }
+
 // 获取角色信息
-function changeSpeaker(roleid){
-	role = roleList[roleid];
-	if (role) {
-		$('.chat .speaker').show();
-		$('.chat .speaker').text(role.name);
-	} else {
-		$('.chat .speaker').hide();
-	}
+function changeSpeaker(roleid) {
+    role = roleList[roleid];
+    if (role) {
+        $('.chat .speaker').show();
+        $('.chat .speaker').text(role.name);
+    } else {
+        $('.chat .speaker').hide();
+    }
 }
 
 // 初始化选项
@@ -121,23 +120,34 @@ function initChoice(choice) {
 
 // 回放
 function replay() {
-	var textList = []
-	$.each(readList, function(i, item){
-		 var currentWord = getWord(item);
-		 textList.push(currentWord);
-	});
-	alert(getReplayText(textList));
+    var textList = [];
+    var repalyContent = '';
+    $.each(readList, function (i, item) {
+        var currentWord = getWord(item);
+        textList.push(currentWord);
+    });
+    if (JSON.stringify(textList) === '[]') {
+        repalyContent = '没有回放内容';
+    } else {
+        repalyContent = getReplayText(textList);
+    }
+    console.log(repalyContent);
+    var d = dialog({
+        title: '回放',
+        content: repalyContent
+    });
+    d.showModal();
 }
 
 // 控制回放文本
 function getReplayText(textList) {
-	var htmlValue = "";
-	$.each(textList, function(i, item){
-		 var currentWord = getWord(item);
-		 htmlValue += roleList[item.roleid].name + "\r\n";
-		 htmlValue += item.content + "\r\n";
-		 htmlValue += "\r\n";
-	});
-	return htmlValue;
+    var htmlValue = "";
+    $.each(textList, function (i, item) {
+        var currentWord = getWord(item);
+        htmlValue += roleList[item.roleid].name + "\r\n";
+        htmlValue += item.content + "<br/>";
+        htmlValue += "\r\n";
+    });
+    return htmlValue;
 }
 
