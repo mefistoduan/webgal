@@ -44,15 +44,16 @@ function stepWord(wordid) {
     roleid = currentWord.roleid;
     // 变更讲话人
     changeSpeaker(roleid);
-    showChoice(currentWord.choice);
 
     // 多选控制器
     var fn;
     if (currentWord.choice) {
         $('#choiceDiv').show();
         fn = function () {
-            // 显示选项
-            $('#choiceDiv').html(initChoice(currentWord.choice));
+        	// 显示选项
+            showChoice(currentWord.choice);
+
+//            $('#choiceDiv').html(initChoice(currentWord.choice));
         }
     } else {
         $('#choiceDiv').hide();
@@ -148,7 +149,12 @@ function getReplayText(textList) {
     var htmlValue = "";
     $.each(textList, function (i, item) {
         var currentWord = getWord(item);
-        htmlValue += roleList[item.roleid].name + "\r\n";
+        var role = roleList[item.roleid];
+        if (role) {
+        	htmlValue += role.name + "\r\n";
+        } else {
+        	htmlValue += "\r\n";
+        }
         htmlValue += item.content + "<br/>";
         htmlValue += "\r\n";
     });
@@ -162,7 +168,6 @@ function showChoice(choice) {
         showDom += '<button  class="choice_btn" onclick="stepWord(' + choice[i].next + ')">' + choice[i].text + '</button>';
     }
     var d = dialog({
-        title: '选项',
         content: showDom
     });
     d.showModal();
