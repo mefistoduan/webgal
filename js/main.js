@@ -1,6 +1,5 @@
 var nextWordid = 1;
 var currentWordid = 1;
-var roleid = 1;
 var readList = [];
 
 $(function () {
@@ -39,40 +38,34 @@ $(function () {
 function stepWord(wordid) {
     var currentWord = getWord(wordid);
     readList.push(wordid);
-    nextWordid = currentWord.next;
+
     currentWordid = wordid;
-    roleid = currentWord.roleid;
-    // 变更讲话人
-    changeSpeaker(roleid);
+    // 变更讲话人 - 内部判断是否为空
+    changeSpeaker(currentWord.role);
 
     // 多选控制器
     var fn;
-    if (currentWord.choice) {
-        $('#choiceDiv').show();
+    if (currentWord.next && currentWord.next.choice) {
         fn = function () {
         	// 显示选项
-            showChoice(currentWord.choice);
-
-//            $('#choiceDiv').html(initChoice(currentWord.choice));
+            showChoice(currentWord.next.choice);
         }
-    } else {
-        $('#choiceDiv').hide();
-        $('#choiceDiv').empty();
     }
     // 变更文本
     displayText(currentWord.content, fn);
     // $('.chat .lt span').empty().text( currentWord.content);
     // 判断是否有下一句
-    if (nextWordid) {
+    if (currentWord.next) {
+        nextWordid = currentWord.next.id;
         $('#step').show();
     } else {
+    	nextWordid = undefined;
         $('#step').hide();
     }
     // 修改背景图
     if (currentWord.backgroundImage) {
         changeBg(currentWord.backgroundImage);
     }
-
 }
 
 // 更换背景图
@@ -104,23 +97,16 @@ function getWord(wordid) {
 }
 
 // 获取角色信息
-function changeSpeaker(roleid) {
-    role = roleList[roleid];
-    if (role) {
+function changeSpeaker(role) {
+	if (role) {
+	   var currentRole = roleList[role.id];
         $('.chat .speaker').show();
-        $('.chat .speaker').text(role.name);
-    } else {
+        $('.chat .speaker').text(currentRole.name);
+		// TODO 立绘管理
+	} else {
+		$('.chat .speaker').empty();
         $('.chat .speaker').hide();
-    }
-}
-
-// 初始化选项
-function initChoice(choice) {
-    var htmlValue = '';
-    for (var i = 0; i < choice.length; i++) {
-        htmlValue += '<button onclick="stepWord(' + choice[i].next + ')">' + choice[i].text + '</button>';
-    }
-    return htmlValue;
+	}
 }
 
 // 回放
@@ -149,7 +135,7 @@ function getReplayText(textList) {
     var htmlValue = "";
     $.each(textList, function (i, item) {
         var currentWord = getWord(item);
-        var role = roleList[item.roleid];
+        var role = roleList[item.role.id];
         if (role) {
         	htmlValue += role.name + "\r\n";
         } else {
@@ -165,7 +151,7 @@ function getReplayText(textList) {
 function showChoice(choice) {
     var showDom = '';
     for (var i = 0; i < choice.length; i++) {
-        showDom += '<button  class="choice_btn" onclick="stepWord(' + choice[i].next + ')">' + choice[i].text + '</button>';
+        showDom += '<button  class="choice_btn" onclick="stepWord(' + choice[i].id + ')">' + choice[i].text + '</button>';
     }
     var d = dialog({
         content: showDom

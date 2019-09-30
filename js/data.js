@@ -16,34 +16,29 @@ function initData(){
 var datas = [
 	{
 		id : 1,
-	    roleid : 1,
+	    role : {id : 1},
 		content : '这里是第一句话',
-		next : 2,
-		backgroundImage : 'office.jpg',
-        choice:[{next:1,text:'选1'},{next:2,text:'选2'},{next:3,text:'选3'}]
+		next : {id : 2},
+		backgroundImage : 'office.jpg'
 	},
 	{
 		id : 2,
-	    roleid : 1,
+	    role : {id : 1},
 		content : '这里是第二句话',
-		next : 3,
+		next : {id : 3},
 		backgroundImage : 'office2.jpg'
 	},
 	{
 		id : 3,
-		roleid : 2,
+		role : {id : 2},
 		content : '这里是第三句话',
 		backgroundImage : 'office.jpg',
-		choice : [
-			{
-				text : '回到第一句',
-				next : 1
-			},
-			{
-				text : '游戏结束',
-				next : 4
-			}
-		]
+		next : {
+			choice : [
+				{text : '回到第一句', id : 1},
+				{text : '游戏结束', id : 4}
+			]
+		}
 	},
 	{
 		id : 4,
