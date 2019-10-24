@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="25cb29f7-38ca-4b3e-bf93-e00fce420d4c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/TheExistingKnight.md" beforeDir="false" afterPath="$PROJECT_DIR$/story/TheExistingKnight.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,13 +12,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/story/TheExistingKnight.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="147">
-                <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <first_editor relative-caret-position="778">
+                <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -65,8 +66,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2175" />
-    <option name="y" value="132" />
+    <option name="x" value="254" />
+    <option name="y" value="7" />
     <option name="width" value="974" />
     <option name="height" value="1026" />
   </component>
@@ -78,6 +79,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -94,7 +96,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -137,17 +138,18 @@
       <workItem from="1569507053561" duration="3291000" />
       <workItem from="1569941914436" duration="1174000" />
       <workItem from="1571840371748" duration="3263000" />
+      <workItem from="1571922331138" duration="4379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20923000" />
+    <option name="totallyTimeSpent" value="25302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1035" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1035" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17398287" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1761242" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -220,14 +222,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/story/TheExistingKnight">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/story/TheExistingKnight" />
     <entry file="file://$PROJECT_DIR$/story/TheExistingKnight.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="147">
-            <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <first_editor relative-caret-position="778">
+            <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>
