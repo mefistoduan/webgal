@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25cb29f7-38ca-4b3e-bf93-e00fce420d4c" name="Default Changelist" comment="">
+    <list default="true" id="25cb29f7-38ca-4b3e-bf93-e00fce420d4c" name="Default Changelist" comment="rebuild basic frame">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
@@ -54,21 +54,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>changeBg</find>
-      <find>speak</find>
-      <find>nextWordid</find>
-      <find>wordid</find>
-      <find>.chat .lt span</find>
-      <find>button</find>
-      <find>位置</find>
-      <find>initChoice</find>
-      <find>showChoice</find>
-      <find>currentWord</find>
-      <find>.chat .lt</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -90,7 +75,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/wwwroot/wifiDig/build/static_pc" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -129,8 +114,16 @@
       <workItem from="1569941914436" duration="1174000" />
       <workItem from="1571840371748" duration="3263000" />
       <workItem from="1571922331138" duration="4379000" />
-      <workItem from="1596438480744" duration="809000" />
+      <workItem from="1596438480744" duration="1697000" />
     </task>
+    <task id="LOCAL-00001" summary="rebuild basic frame">
+      <created>1596439401214</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596439401214</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,26 +140,42 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="rebuild basic frame" />
+    <option name="LAST_COMMIT_MESSAGE" value="rebuild basic frame" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="410" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596438964280">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
     <state x="410" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596438964280" />
-    <state width="1894" height="253" key="GridCell.Tab.0.bottom" timestamp="1596439180005">
+    <state x="687" y="205" key="FileChooserDialogImpl" timestamp="1596440175963">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1894" height="253" key="GridCell.Tab.0.bottom/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596439180005" />
-    <state width="1894" height="253" key="GridCell.Tab.0.center" timestamp="1596439180004">
+    <state x="687" y="205" key="FileChooserDialogImpl/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596440175963" />
+    <state width="1894" height="253" key="GridCell.Tab.0.bottom" timestamp="1596440177991">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1894" height="253" key="GridCell.Tab.0.center/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596439180004" />
-    <state width="1894" height="253" key="GridCell.Tab.0.left" timestamp="1596439180004">
+    <state width="1894" height="253" key="GridCell.Tab.0.bottom/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596440177991" />
+    <state width="1894" height="253" key="GridCell.Tab.0.center" timestamp="1596440177991">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1894" height="253" key="GridCell.Tab.0.left/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596439180004" />
-    <state width="1894" height="253" key="GridCell.Tab.0.right" timestamp="1596439180004">
+    <state width="1894" height="253" key="GridCell.Tab.0.center/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596440177991" />
+    <state width="1894" height="253" key="GridCell.Tab.0.left" timestamp="1596440177990">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1894" height="253" key="GridCell.Tab.0.right/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596439180004" />
+    <state width="1894" height="253" key="GridCell.Tab.0.left/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596440177990" />
+    <state width="1894" height="253" key="GridCell.Tab.0.right" timestamp="1596440177991">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1894" height="253" key="GridCell.Tab.0.right/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596440177991" />
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1596439869234">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596439869234" />
+    <state x="589" y="164" width="742" height="690" key="find.popup" timestamp="1596439299623">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="589" y="164" width="742" height="690" key="find.popup/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596439299623" />
   </component>
 </project>

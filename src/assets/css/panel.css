@@ -1,0 +1,261 @@
+.sub_title {
+    width: 96%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.sub_title em {
+    text-decoration: none;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+.panel {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background: #ccc;
+    padding: 5px;
+}
+
+.panel /deep/ .el-col em {
+    float: left;
+    text-align: left;
+    line-height: 35px;
+    margin-right: 10px;
+    font-style: normal;
+}
+
+.panel /deep/ .el-input {
+    width: 150px;
+    float: left;
+}
+
+.panel /deep/ .el-select {
+    width: 150px;
+    float: left;
+}
+
+.panel /deep/ .el-input__inner {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    border-radius: 0;
+    float: left;
+    padding-right: 22px;
+}
+
+.panel /deep/ .el-date-editor--daterange {
+    width: 280px;
+}
+
+.panel /deep/ .el-date-editor .el-range-separator {
+    width: 30px;
+}
+
+.panel {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.panel /deep/ .el-input {
+    width: 150px;
+}
+
+.panel .panel_control em {
+    width: 70px;
+    float: left;
+    text-align: right;
+}
+
+.table_container {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    float: left;
+    padding: 10px;
+}
+
+.table_container /deep/ .el-input .el-input__inner {
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    padding-right: 22px;
+}
+
+.table_container /deep/ .el-select .el-input__inner {
+    height: 30px;
+    line-height: 30px;
+    width: 70px;
+    padding-right: 22px;
+}
+
+.dataTables_length {
+    width: 380px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.dataTables_length /deep/ .el-input {
+    width: 100px;
+}
+
+
+.modal {
+    display: block !important;
+}
+
+.modal ul, .modal li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.modal li {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    height: 24px;
+    line-height: 24px;
+    text-align: left;
+}
+
+/deep/ .form-horizontal .col-sm-5 .el-select {
+    width: 100%;
+}
+
+/deep/ .form-horizontal .col-sm-5 .el-input {
+    width: 100%;
+}
+
+/deep/ .el-input-number {
+    width: 100%;
+}
+
+.large {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+
+#pages {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: block;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    padding-bottom: 30px;
+}
+
+/*eldialog*/
+.el-dialog__body .form-group {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+/deep/ .el-dialog__body em {
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    float: left;
+    font-style: normal;
+}
+
+/deep/ .el-dialog__body .el-input {
+    width: 70%;
+    float: left;
+}
+
+/deep/ .el-dialog__body .panel_select {
+    width: 70%;
+    float: left;
+}
+
+/deep/ .el-dialog__body .panel_select .el-input--suffix {
+    width: 100%;
+    float: left;
+}
+
+/deep/ .el-dialog__body .el-textarea {
+    width: 70%;
+    float: left;
+}
+
+.table_container .pull-right {
+    margin-left: 10px;
+}
+
+/deep/ .el-table td, .el-table th {
+    padding: 5px;
+}
+
+.mid_time {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 35px;
+}
+.red {
+    color: red;
+}
+.green {
+    color: #67c23a;
+}
+.yellow {
+    color: yellow;
+}
+
+.red_icon {
+    background:red ;
+}
+.red_green {
+    background:#67c23a ;
+}
+.el-dialog__body em {
+    width: 70px;
+    float: left;
+    margin-left: 10px;
+    text-align: right;
+    margin-right: 10px;
+}
+.el-dialog__body .el-col {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
