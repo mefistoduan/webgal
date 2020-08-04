@@ -14,22 +14,28 @@ const routes = [
         component: () => import( '../views/Index.vue'),
         children: [
             {
-                path: '/',
-                name: 'Login',
-                component: () => import('@/views/Login.vue'),
+                path: '/section',
+                name: 'Section',
+                component: () => import('@/views/Section.vue'),
                 meta: {
-                    title: "开始",
+                    title: "场景",
                 }
             }
         ]
-    }, {
+    }
+    , {
         path: '/login',
         name: 'Login',
         component: () => import( '../views/Login.vue')
-    },{
+    }
+    ,{
         path: '/setting',
         name: 'Setting',
         component: () => import( '../views/Setting.vue')
+    },{
+        path: '/save',
+        name: 'Save',
+        component: () => import( '../views/Save.vue')
     },
     {
         path: '*',
@@ -57,7 +63,8 @@ router.beforeEach((to, from, next) => {
         next();
     } else {
         //如果token存在，就正常跳转，如果不存在，则说明未登陆，则跳转到'login'
-        isLogin ? next() : next("/login");
+        // isLogin ? next() : next("/login");
+        next();
     }
 });
 

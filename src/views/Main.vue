@@ -1,7 +1,5 @@
 <template>
     <div class="container">
-<!--        <timePart></timePart>-->
-<!--        <hand></hand>-->
     </div>
 </template>
 
