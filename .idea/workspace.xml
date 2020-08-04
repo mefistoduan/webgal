@@ -21,6 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="25cb29f7-38ca-4b3e-bf93-e00fce420d4c" name="Default Changelist" comment="rebuild basic frame">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Basic.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Setting.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +42,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="1fZvYt2dx9amHXIC9SAnv2mdTMm" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -52,11 +60,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="D:/wwwroot/wifiDig/build/static_pc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -75,6 +84,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -94,6 +104,7 @@
       <workItem from="1571922331138" duration="4379000" />
       <workItem from="1596438480744" duration="1697000" />
       <workItem from="1596442118142" duration="2246000" />
+      <workItem from="1596467100138" duration="909000" />
     </task>
     <task id="LOCAL-00001" summary="rebuild basic frame">
       <created>1596439401214</created>
@@ -106,7 +117,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -133,34 +144,43 @@
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
     <state x="687" y="205" key="FileChooserDialogImpl/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596440175963" />
-    <state width="931" height="253" key="GridCell.Tab.0.bottom" timestamp="1596448642453">
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom" timestamp="1596467194635">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
     <state width="931" height="253" key="GridCell.Tab.0.bottom/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596448642453" />
-    <state width="931" height="253" key="GridCell.Tab.0.center" timestamp="1596448642453">
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1019/1920.0.1920.1080@0.0.1920.1019" timestamp="1596467194635" />
+    <state width="1899" height="275" key="GridCell.Tab.0.center" timestamp="1596467194635">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
     <state width="931" height="253" key="GridCell.Tab.0.center/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596448642453" />
-    <state width="931" height="253" key="GridCell.Tab.0.left" timestamp="1596448642453">
+    <state width="1899" height="275" key="GridCell.Tab.0.center/0.0.1920.1019/1920.0.1920.1080@0.0.1920.1019" timestamp="1596467194635" />
+    <state width="1899" height="275" key="GridCell.Tab.0.left" timestamp="1596467194635">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
     <state width="931" height="253" key="GridCell.Tab.0.left/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596448642453" />
-    <state width="931" height="253" key="GridCell.Tab.0.right" timestamp="1596448642453">
+    <state width="1899" height="275" key="GridCell.Tab.0.left/0.0.1920.1019/1920.0.1920.1080@0.0.1920.1019" timestamp="1596467194635" />
+    <state width="1899" height="275" key="GridCell.Tab.0.right" timestamp="1596467194635">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
     <state width="931" height="253" key="GridCell.Tab.0.right/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596448642453" />
+    <state width="1899" height="275" key="GridCell.Tab.0.right/0.0.1920.1019/1920.0.1920.1080@0.0.1920.1019" timestamp="1596467194635" />
     <state x="437" y="181" key="IDE.errors.dialog" timestamp="1596443315141">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
     <state x="437" y="181" key="IDE.errors.dialog/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596443315141" />
+    <state x="461" y="153" key="SettingsEditor" timestamp="1596467223286">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="461" y="153" key="SettingsEditor/0.0.1920.1019/1920.0.1920.1080@0.0.1920.1019" timestamp="1596467223286" />
     <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1596448464569">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
     <state x="452" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596448464569" />
-    <state x="238" y="406" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596448820762">
+    <state x="238" y="406" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596467282886">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
     <state x="238" y="406" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596448820762" />
+    <state x="238" y="406" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1019/1920.0.1920.1080@0.0.1920.1019" timestamp="1596467282886" />
     <state x="589" y="164" width="742" height="690" key="find.popup" timestamp="1596439299623">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
