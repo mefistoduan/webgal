@@ -20,28 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25cb29f7-38ca-4b3e-bf93-e00fce420d4c" name="Default Changelist" comment="rebuild basic frame">
-      <change afterPath="$PROJECT_DIR$/src/assets/img/bg/bg01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/bg/bg02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/man/Agilulf.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/man/king.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/man/knight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/story/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Save.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Section.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/bg/bg01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/bg/bg02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/border/bbl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/border/bbr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/border/btl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/border/btr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/man/Agilulf.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/man/king.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/man/knight.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Main.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Setting.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Setting.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Section.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Section.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +109,7 @@
       <workItem from="1596442118142" duration="2246000" />
       <workItem from="1596467100138" duration="909000" />
       <workItem from="1596526670551" duration="2853000" />
+      <workItem from="1596592304822" duration="2916000" />
     </task>
     <task id="LOCAL-00001" summary="rebuild basic frame">
       <created>1596439401214</created>
@@ -168,25 +149,25 @@
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
     <state x="687" y="205" key="FileChooserDialogImpl/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596440175963" />
-    <state width="1894" height="249" key="GridCell.Tab.0.bottom" timestamp="1596537568491">
+    <state width="931" height="248" key="GridCell.Tab.0.bottom" timestamp="1596592663337">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1894" height="249" key="GridCell.Tab.0.bottom/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596537568491" />
+    <state width="931" height="248" key="GridCell.Tab.0.bottom/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596592663337" />
     <state width="1899" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1019/1920.0.1920.1080@0.0.1920.1019" timestamp="1596467194635" />
-    <state width="1894" height="249" key="GridCell.Tab.0.center" timestamp="1596537568491">
+    <state width="931" height="248" key="GridCell.Tab.0.center" timestamp="1596592663337">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1894" height="249" key="GridCell.Tab.0.center/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596537568491" />
+    <state width="931" height="248" key="GridCell.Tab.0.center/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596592663337" />
     <state width="1899" height="275" key="GridCell.Tab.0.center/0.0.1920.1019/1920.0.1920.1080@0.0.1920.1019" timestamp="1596467194635" />
-    <state width="1894" height="249" key="GridCell.Tab.0.left" timestamp="1596537568491">
+    <state width="931" height="248" key="GridCell.Tab.0.left" timestamp="1596592663337">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1894" height="249" key="GridCell.Tab.0.left/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596537568491" />
+    <state width="931" height="248" key="GridCell.Tab.0.left/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596592663337" />
     <state width="1899" height="275" key="GridCell.Tab.0.left/0.0.1920.1019/1920.0.1920.1080@0.0.1920.1019" timestamp="1596467194635" />
-    <state width="1894" height="249" key="GridCell.Tab.0.right" timestamp="1596537568491">
+    <state width="931" height="248" key="GridCell.Tab.0.right" timestamp="1596592663337">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state width="1894" height="249" key="GridCell.Tab.0.right/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596537568491" />
+    <state width="931" height="248" key="GridCell.Tab.0.right/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596592663337" />
     <state width="1899" height="275" key="GridCell.Tab.0.right/0.0.1920.1019/1920.0.1920.1080@0.0.1920.1019" timestamp="1596467194635" />
     <state width="931" height="314" key="GridCell.Tab.1.bottom" timestamp="1596526468844">
       <screen x="0" y="0" width="1920" height="1019" />
@@ -236,10 +217,10 @@
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
     <state width="931" height="314" key="GridCell.Tab.3.right/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596526468844" />
-    <state x="437" y="181" key="IDE.errors.dialog" timestamp="1596526684178">
+    <state x="437" y="181" key="IDE.errors.dialog" timestamp="1596592314208">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state x="437" y="181" key="IDE.errors.dialog/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596526684178" />
+    <state x="437" y="181" key="IDE.errors.dialog/0.0.1920.1019/1920.0.1920.1050@0.0.1920.1019" timestamp="1596592314208" />
     <state x="461" y="153" key="SettingsEditor" timestamp="1596467223286">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>

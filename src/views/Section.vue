@@ -1,7 +1,8 @@
 <template>
     <div class="context">
-        <div class="bg" >
-            <div class="man" >
+        <div class="bg">
+            <img :src="BgSrc" class="bg"/>
+            <div class="man">
                 <ul>
                     <li>
                         <img :src="manSrc" alt="">
@@ -28,6 +29,7 @@
 
 <script>
     import story from '../story/index'
+
     export default {
         data() {
             return {
@@ -40,7 +42,8 @@
                 cid: 0,
                 readList: 1,
                 event: {},
-                manSrc: "..",
+                manSrc: require("../../static/img/man/king.jpg"),
+                BgSrc: require("../../static/img/bg/bg01.png"),
                 openChioce: false,
                 choiceList: [],
             }
@@ -76,7 +79,11 @@
                     // 继续对话
                     this.wordDisplay(e.content[cid].text);
                     this.speaker = this.RidtoRame(e.content[cid].rid);
-                    this.manSrc = "../../static/img/man/" + this.RidtoHead(e.content[cid].rid);
+                    if(this.RidtoHead(e.content[cid].rid)){
+                        this.manSrc = require("../../static/img/man/" + this.RidtoHead(e.content[cid].rid));
+                    }else{
+                        this.manSrc = '';
+                    }
                     this.cid += 1;
                 }
             },
@@ -85,7 +92,6 @@
             },
             // 进度保存
             savePrgress() {
-                console.log(this.currentWordid);
                 localStorage.saveContent = this.currentWordid;
                 this.$toast.success('保存成功');
             },
@@ -105,8 +111,7 @@
             },
             // 更换背景图
             changeBg(src) {
-                // this.backgroundSrc = '';
-                // this.backgroundSrc = "url('../assets/img/bg/" + src + "')"
+                this.BgSrc = require("../../static/img/bg/" + src);
             },
             // 读取角色名
             RidtoRame(rid) {
@@ -123,8 +128,7 @@
                 this.currentWordid = 1;
                 this.readList = 1;
                 this.nextWordid = 1;
-                // this.backgroundSrc = "url('@/assets/img/bg/bg01.png')";
-                this.manSrc = "..";
+                this.manSrc = require("../../static/img/man/king.jpg");
                 this.readEvent(0);
             },
             readEvent(i) {
@@ -149,14 +153,15 @@
                 let that = this;
                 this.text = '';
                 type();
+
                 function type() {
                     that.text = word.substring(0, index++);
-                    if(index == 0){
+                    if (index == 0) {
                         that.playingText == true
                     }
                     if (index <= word.length && that.playingText == true) {
                         setTimeout(type, localStorage.speed);
-                    }else{
+                    } else {
                         that.text = word
                     }
                 }
@@ -204,7 +209,7 @@
         width: 100%;
         display: block;
         margin: 0 auto;
-        background: rgba(255,255,255,0.3);
+        background: rgba(255, 255, 255, 0.3);
     }
 
     .chat .lt {
