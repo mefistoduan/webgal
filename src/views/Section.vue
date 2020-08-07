@@ -21,6 +21,7 @@
             <div class="rt">
                 <el-button type="success" id="load" @click="load">读数据</el-button>
                 <el-button type="secondary" id="save" @click="save">存数据</el-button>
+                <el-button type="default" id="goback" @click="goback">返回首页</el-button>
                 <el-button type="primary" id="step" @click="step">下句话</el-button>
             </div>
         </div>
@@ -58,6 +59,17 @@
                 this.openChioce = false;
                 this.readEvent(i)
             },
+            // 返回首页
+            goback() {
+                this.$router.push(
+                    {
+                        path: '/login',
+                        query: {
+                            step: 1
+                        }
+                    }
+                )
+            },
             step() {
                 let e = this.event;
                 this.stepWord(e[0]);
@@ -79,9 +91,9 @@
                     // 继续对话
                     this.wordDisplay(e.content[cid].text);
                     this.speaker = this.RidtoRame(e.content[cid].rid);
-                    if(this.RidtoHead(e.content[cid].rid)){
+                    if (this.RidtoHead(e.content[cid].rid)) {
                         this.manSrc = require("../../static/img/man/" + this.RidtoHead(e.content[cid].rid));
-                    }else{
+                    } else {
                         this.manSrc = '';
                     }
                     this.cid += 1;
@@ -235,7 +247,7 @@
         margin-right: 5px;
     }
 
-    .chat .rt button:nth-child(3) {
+    .chat .rt button:nth-child(last) {
         margin-right: 0;
         float: right;
     }

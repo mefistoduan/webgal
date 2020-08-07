@@ -20,6 +20,14 @@ const routes = [
                 meta: {
                     title: "场景",
                 }
+            },
+            {
+                path: '*',
+                name: 'Login',
+                component: () => import('@/views/Login.vue'),
+                meta: {
+                    title: "场景",
+                }
             }
         ]
     }
@@ -63,7 +71,7 @@ router.beforeEach((to, from, next) => {
         next();
     } else {
         //如果token存在，就正常跳转，如果不存在，则说明未登陆，则跳转到'login'
-        // isLogin ? next() : next("/login");
+        isLogin ? next() : next("/login");
         next();
     }
 });
