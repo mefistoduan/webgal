@@ -14,6 +14,13 @@ const routes = [
         component: () => import( '../views/Index.vue'),
         children: [
             {
+                path: '',
+                name: 'main',
+                component: () => import('@/views/Main.vue'),
+                meta: {
+                    title: "main",
+                }
+            },  {
                 path: '/section',
                 name: 'Section',
                 component: () => import('@/views/Section.vue'),
